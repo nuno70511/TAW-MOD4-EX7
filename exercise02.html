@@ -56,6 +56,34 @@
         console.log("The area of circle with radius " + radius + " is " + area);
         return area;
       }
+
+
+
+
+      document.getElementById("square-button").addEventListener("click", function(){
+        let num = document.getElementById("square-input").value;
+        let sol = squareNumber(num);
+        document.getElementById("solution").innerHTML = sol;
+      })
+
+      document.getElementById("half-button").addEventListener("click", function(){
+        let num = document.getElementById("half-input").value;
+        let sol = halfOf(num);
+        document.getElementById("solution").innerHTML = sol;
+      })
+
+      document.getElementById("percent-button").addEventListener("click", function(){
+        let num1 = document.getElementById("percent1-input").value;
+        let num2 = document.getElementById("percent2-input").value;
+        let sol = percentOf(num1, num2);
+        document.getElementById("solution").innerHTML = sol;
+      })
+
+      document.getElementById("area-button").addEventListener("click", function(){
+        let radius = document.getElementById("area-input").value;
+        let sol = areaOfCircle(radius);
+        document.getElementById("solution").innerHTML = sol;
+      })
     </script>
   </body>
 </html>
